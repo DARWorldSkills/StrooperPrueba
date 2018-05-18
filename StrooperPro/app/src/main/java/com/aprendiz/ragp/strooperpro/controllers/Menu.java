@@ -47,4 +47,21 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
                 break;
         }
     }
+
+    public void enviar(View view) {
+        Intent intent = new Intent(Menu.this,Juego.class);
+        startActivity(intent);
+    }
+
+    public void enviar2(View view) {
+
+        Intent intent = new Intent(Menu.this,Puntuacion.class);
+        startActivity(intent);
+    }
+
+    public void enviar3(View view) {
+
+        Intent intent = new Intent(Menu.this,Configuracion.class);
+        startActivity(intent);
+    }
 }
