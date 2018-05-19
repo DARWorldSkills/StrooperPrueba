@@ -7,4 +7,5 @@
     <string name="palabrascorrectas">Palabras Correctas</string>
     <string name="palabrasincorrectas">Palabras Incorrectas</string>
     <string name="intentos">Intentos</string>
+    <string name="salir">Salir</string>
 </resources>
