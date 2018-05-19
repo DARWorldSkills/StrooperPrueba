@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -43,6 +42,7 @@ public class Juego extends AppCompatActivity {
             public void onClick(View v) {
                 isCorrecto();
                 inputDatos();
+                intentos+=1;
                 segundos[1]=0;
                 randomizar();
 
@@ -55,6 +55,7 @@ public class Juego extends AppCompatActivity {
             public void onClick(View v) {
                 isIncorrecto();
                 inputDatos();
+                intentos+=1;
                 segundos[1]=0;
                 randomizar();
             }
@@ -148,7 +149,7 @@ public class Juego extends AppCompatActivity {
     private void inizialite() {
         txtcorrectas = findViewById(R.id.txtcorrectas);
         txtincorrectas = findViewById(R.id.txtincorrectas);
-        txtintentos = findViewById(R.id.txtintentos);
+        txtintentos = findViewById(R.id.txtintentosJ);
         txtaciertos = findViewById(R.id.txtaciertos);
         txtcrono = findViewById(R.id.txtcrono);
         txtpalabra = findViewById(R.id.txtpalabra);
@@ -187,7 +188,7 @@ public class Juego extends AppCompatActivity {
         if (pcorrecto>0) {
             double tmp1 = pcorrecto, tmp2 = intentos - 1;
 
-            float tmpP = (float) (tmp1 * tmp2) / 100;
+            float tmpP = (float) (tmp1 / tmp2) * 100;
             aciertos = (int) tmpP;
         }else{
             aciertos = 100;

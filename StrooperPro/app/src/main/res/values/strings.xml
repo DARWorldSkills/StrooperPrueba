@@ -3,4 +3,8 @@
     <string name="Jugar">Jugar</string>
     <string name="Puntuacion">Puntuacion</string>
     <string name="configuracion">Configuración</string>
+    <string name="menu">Menú</string>
+    <string name="palabrascorrectas">Palabras Correctas</string>
+    <string name="palabrasincorrectas">Palabras Incorrectas</string>
+    <string name="intentos">Intentos</string>
 </resources>
