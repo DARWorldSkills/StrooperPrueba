@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.Menu"
+    android:orientation="vertical"
+    android:background="#182937">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:layout_weight="1"
+        android:src="@drawable/nombreul" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#b0c7d9">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:onClick="enviar"
+                android:background="@drawable/playapp" />
+
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnjuegoM"
+                android:text="@string/Jugar"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#182937"
+                android:background="#b0c7d9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9cb0bf">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:onClick="enviar2"
+                android:background="@drawable/trofeoapp" />
+
+            <Button
+                android:id="@+id/btnpuntuacionM"
+                android:layout_weight="1"
+                android:text="@string/Puntuacion"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#182937"
+                android:background="#9cb0bf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#808d96">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:onClick="enviar3"
+                android:background="@drawable/confiapp" />
+
+            <Button
+                android:id="@+id/btnconfiguracionM"
+                android:layout_weight="1"
+                android:text="@string/configuracion"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="#808d96"
+                android:textColor="#182937"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
